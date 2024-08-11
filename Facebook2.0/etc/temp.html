@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Test</title>
+</head>
+<body class="bg-gray-200">
+  
+  <!-- Friens div Start -->
+  <div class="max-w-6xl mx-auto bg-white mt-14 px-8 py-8 rounded-xl shadow-xl">
+
+    <!-- Top bar Start -->
+    <div class="flex justify-between items-center">
+      <div>
+        <p class="text-xl font-bold text-gray-700">Friends</p>
+      </div>
+
+      <div class="flex items-center space-x-6">
+        <div class="bg-gray-200 ml-3 rounded-full">
+          <form action="">
+            <button type="submit"><i class="fa fa-search pl-3 text-gray-500"></i></button>
+            <input class="w-40 px-4 py-1 bg-gray-200 rounded-full outline-none" type="text" placeholder="Search Facebook.." name="search">
+          </form>
+        </div>
+
+        <div>
+          <p class="font-semibold text-blue-600">Friend requests</p>
+        </div>
+
+        <div>
+          <p class="font-semibold text-blue-600">Find Friends</p>
+        </div>
+
+        <div class="bg-gray-200 rounded-md">
+          <i class="fa-solid fa-ellipsis px-4 py-2 opacity-95"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Top bar End -->
+
+    <!-- Etc list Start -->
+    <div class="flex mt-6 text-gray-500 font-semibold space-x-6">
+
+      <div class="border-b-4 border-blue-500">
+        <button>
+          <p class="text-blue-600 font-semibold">All friends</p>
+        </button>
+      </div>
+      
+      <button class="font-semibold">
+        <p>Recently Added</p>
+      </button>
+
+      <p>Birthdays</p>
+      <p>Work</p>
+      <p>Current City</p>
+      <p>Hometown</p>
+      <p>Followers</p>
+      <p>Following</p>
+
+    </div>
+    <!-- Etc list End -->
+
+      <!-- Friends List Start -->
+        <div class="mt-8 mx-6">
+          <div class="flex flex-wrap justify-between">
+
+
+            <div class="w-2/5 flex justify-between items-center my-2">
+              <div class="flex items-center">
+                <img class="w-26 h-28 rounded-xl" src="img/friends/flower-girl.jpg" alt="shif">
+                <div class="ml-4">
+                  <p class="font-bold text-gray-600">${friends.name}</p>
+                  <p class="text-sm text-gray-500 font-semibold">${friends.address}</p>
+                  <button class="mt-2 bg-blue-600 hover:bg-gray-400 opacity-95 rounded-md">
+                    <input type="hidden" class="id" name="userId" value="18">
+                    <p onclick="viewFriends(event)" class="font-semibold text-white hover:text-gray-700 px-3 py-1">View Profile</p>
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <button class="hover:bg-gray-300 rounded-full">
+                  <i class="fa-solid fa-ellipsis p-3 text-xl"></i>
+                </button>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+      <!-- Friends List End -->
+
+</div>
+<!-- Friens div End -->
+
+
+</body>
+</html>
+
+
+
+
+<!-- Main div Start -->
+<div>
+  <!-- Top Navbar Start -->
+  <div class="bg-gray-800 bg-opacity-95">
+
+    <!-- top nav wide div Start -->
+    <div class="max-w-screen-xl mx-auto">
+      <!-- icon - mid - acc Start -->
+      <div class="flex items-center">
+           <!-- icon & search Start -->
+          <div class="flex items-center py-2">
+
+            <div>
+              <div class="bg-blue-700 w-10 h-10 text-center rounded-full">
+                <p class="text-4xl font-bold text-white">f</p>
+              </div>
+            </div>
+
+            <div class="bg-gray-200 ml-3 rounded-full">
+              <form action="">
+                <button type="submit"><i class="fa fa-search pl-3 text-gray-500"></i></button>
+                <input class="px-4 py-1 bg-gray-200 rounded-full outline-none" type="text" placeholder="Search Facebook.." name="search">
+              </form>
+            </div>
+
+          </div>
+          <!-- icon & search End -->
+
+          <!-- Mid items section Start -->
+          <div class="w-7/12 flex justify-center space-x-8 text-2xl text-gray-400 font-semibold">
+            
+            <div class="border-b-2">
+              <i class="fa-solid fa-house text-blue-700"></i>
+            </div>
+
+            <div>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-store"></i>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+
+          </div>
+          <!-- Mid items section End -->
+
+          <!-- Account section Start -->
+          <div class="w-56 px-1 text-gray-500 font-semibold flex justify-between text-xl text-center">
+
+            <div class="bg-gray-100 opacity-75 rounded-full">
+              <button class="px-3 py-1">
+                <i class="fa-solid fa-bars text-gray-600"></i>
+              </button>
+            </div>
+
+            <div class="bg-gray-100 opacity-75 rounded-full">
+              <button class="px-3 py-1">
+                <i class="fa-brands fa-facebook-messenger"></i>
+              </button>
+            </div>
+
+            <div class="bg-gray-100 opacity-75 rounded-full">
+              <button class="px-3 py-1">
+                <i class="fa-solid fa-bell"></i>
+              </button>
+            </div>
+
+            <!-- Only Account div start -->
+            <div class="text-gray-500 font-semibold">
+              
+              <div id="accountBtn" onmouseenter="accountMouseEnter()" onmouseleave="accountMouseLeave()"
+              class="inline-flex items-center border-0 cursor-pointer focus:outline-none opacity-75 bg-gray-100 hover:bg-gray-200 rounded-full text-center">
+              <button>
+                <i class="fa-solid fa-circle-user px-3 py-2 text-2xl"></i>
+              </button>
+                <!-- Account -->
+                <!-- <i class="fa-solid fa-chevron-down pl-1"></i> -->
+              </div>
+              <div id="accountArea" onmouseleave="this.classList.add('hidden')" class="hidden absolute right-14 top-11 bg-gray-200 w-48 rounded-xl -mt-1 py-2">
+                <a href="user-profile.html" class="block hover:bg-gray-100 py-2 px-4 cursor-pointer">Profile</a>
+                <a href="update-user-profile.html" class="block hover:bg-gray-100 py-2 px-4 cursor-pointer">Update Profile</a>
+                <a href="change-user-pass.html" class="block hover:bg-gray-100 py-2 px-4 cursor-pointer">Change Password</a>
+                <a onclick="signOut(event)" href="#" class="block hover:bg-gray-100 py-2 px-4">Sign out</a>
+              </div>
+          
+            </div>
+            <!-- Only Account div end -->
+          </div>
+          <!-- Account section End -->
+
+      </div>
+      <!-- icon - mid - acc End -->
+    </div>
+    <!-- top nav wide div End -->
+
+  </div>
+  <!-- Top Navbar End -->
+</div>
+<!-- Main div End -->

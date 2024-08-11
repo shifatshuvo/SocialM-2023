@@ -1,0 +1,38 @@
+.scrollb::-webkit-scrollbar {
+  width: 8px;
+}
+ 
+.scrollb::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.scrollb::-webkit-scrollbar-thumb {
+  background-color: rgb(53, 41, 41);
+  outline: 1px solid slategrey;
+}
+
+.post-scroll::-webkit-scrollbar {
+  width: 12px;
+}
+ 
+.post-scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.post-scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(134, 134, 134);
+  outline: 1px solid slategrey;
+}
+
+.rightOverflow::-webkit-scrollbar {
+  width: 8px;
+}
+ 
+.rightOverflow::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.rightOverflow::-webkit-scrollbar-thumb {
+  background-color: rgba(48, 59, 121, 0.719);
+  outline: 1px solid slategrey;
+}

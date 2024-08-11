@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/2021_Facebook_icon.png" type="image/x-icon">
+  <title>Sign In</title>
+</head>
+<body class="bg-gray-400 flex justify-center mt-28">
+  <!-- Main div Start -->
+
+  <div class="w-1/3 bg-gray-100 flex justify-center py-6 rounded-xl">
+    <div class="space-y-4">
+
+      <div class="text-center pb-6">
+        <p class="text-3xl font-semibold">Sign In</p>
+        <p class="pb-4 pt-2">Welcome To 
+          <a href="index.html">
+            <span class="font-semibold"><span class="text-blue-700">Facebook</span> 2.0</span>
+          </a>
+        </p>
+        <hr>
+      </div>
+  
+      <div class="">
+
+        <div class="flex items-center space-x-11">
+          <lable class="font-semibold text-xl" for="email">Email</lable>
+          <input id="email" class="w-full bg-gray-100 border-b-2 border-gray-400 outline-none py-2" type="email" placeholder="Enter your Email">
+          
+        </div>
+        <p id="emailError"class="hidden text-red-800 bg-red-100 rounded mt-1 py-1 px-2">Email cannot be empty!!</p>
+    
+        <div class="flex items-center pt-4 pb-4 space-x-2">
+          <lable class="font-semibold text-xl" for="password">Password</lable>
+          <input id="password" class="w-full bg-gray-100 border-b-2 border-gray-400 outline-none py-2" type="password" placeholder="Enter your Password">
+          
+        </div>
+        <p id="passwordError"class="hidden text-red-800 bg-red-100 rounded mt-1 py-1 px-2">Password cannot be empty!!</p>
+
+      </div>
+
+      <div class="flex justify-center cursor-pointer py-6">
+        <button>
+          <p onclick="signIn(event)" class="bg-green-700 hover:bg-blue-800 text-white text-xl font-semibold text-center py-2 px-8 rounded-xl shadow-2xl">Sign In</p>
+        </button>
+      </div>
+
+      <div class="text-center">
+        <p>Dont't have account? <a href="sign-up.html"><span class="text-blue-700 font-semibold">Sign Up</span></a></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Main div End -->
+  <script src="js/signIn.js"></script>
+</body>
+</html>

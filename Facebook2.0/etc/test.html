@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Test</title>
+</head>
+<body class="bg-gray-200">
+  
+  
+
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<body class="bg-gray-100">
+    <div class="min-h-screen flex flex-col items-center justify-center">
+        <div class="bg-white p-4 rounded shadow-md w-96">
+            <h1 class="text-2xl font-bold mb-4">Create a Post</h1>
+            <textarea id="postText" class="w-full p-2 border rounded mb-4" placeholder="What's on your mind?"></textarea>
+            <input type="file" id="fileInput" class="hidden" accept="image/*">
+            <label for="fileInput" class="w-full p-4 rounded border-dashed border-2 cursor-pointer">
+                <div class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mb-2" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    <span>Click to upload or drag and drop an image</span>
+                </div>
+            </label>
+            <div id="imagePreview" class="mt-4">
+                <!-- Uploaded image will be displayed here -->
+            </div>
+            <button id="postButton" class="bg-blue-500 text-white py-2 px-4 rounded cursor-pointer mt-4">Post</button>
+        </div>
+    </div>
+    <script>
+        const postText = document.getElementById('postText');
+        const fileInput = document.getElementById('fileInput');
+        const imagePreview = document.getElementById('imagePreview');
+        const postButton = document.getElementById('postButton');
+
+        fileInput.addEventListener('change', function () {
+            const file = fileInput.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const image = document.createElement('img');
+                    image.src = e.target.result;
+                    imagePreview.innerHTML = '';
+                    imagePreview.appendChild(image);
+                };
+                reader.readAsDataURL(file);
+            } else {
+                imagePreview.innerHTML = '';
+            }
+        });
+
+        postButton.addEventListener('click', function () {
+            const text = postText.value.trim();
+            const image = imagePreview.querySelector('img');
+            
+            // You can perform your post creation logic here
+            if (text || image) {
+                // For this example, we'll just display a message
+                const postMessage = text || "Image posted!";
+                alert(`Posted: ${postMessage}`);
+                postText.value = '';
+                imagePreview.innerHTML = '';
+                fileInput.value = '';
+            }
+        });
+    </script>
+</body>
+
+</html>

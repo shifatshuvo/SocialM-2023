@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/2021_Facebook_icon.png" type="image/x-icon">
+  <title>Change Password</title>
+</head>
+<body class="bg-gray-200">
+
+  <!-- Main div Start -->
+
+    <div class="passContainer">
+
+      <!-- Top navbar Start -->
+  <div class="bg-white shadow-md py-2">
+    <div class="max-w-6xl mx-auto flex justify-between">
+      
+      <div class="flex items-center text-xl font-semibold">
+        <i class="fa-solid fa-s text-green-700"></i>
+        <i class="fa-solid fa-b pl-1 text-green-700"></i>
+        <p class="pl-2">Social</p>
+      </div>
+
+      <div class="flex items-center">
+        <p class="font-semibold pr-2">Hi, <span>User Name</span></p>
+        <p class="h-10 w-10 bg-blue-500 rounded-full"></p>
+      </div>
+
+    </div>
+  </div>
+  <!-- Top navbar End -->
+
+    <!-- Side nav & info Start -->
+    <div class="max-w-6xl mx-auto pt-14 flex space-x-16">
+
+      <!-- side navbar Start -->
+      <div class="w-2/6 h-96 bg-white rounded-xl flex justify-center shadow-xl">
+        <div class="text-xl font-semibold text-gray-500 px-4 space-y-2 pt-6">
+          
+          <div class="">
+            <p class="text-center text-gray-500 text-3xl font-semibold px-4 py-2">Profile</p>
+          </div>
+
+          <div class="pb-4">
+            <hr>
+          </div>
+
+          <div class="hover:bg-gray-200 hover:text-blue-600 py-1 px-4 rounded-xl">
+            <a href="user-profile.html">View Profile</a>
+          </div>
+
+          <div class="hover:bg-gray-200 hover:text-blue-600 py-1 px-4 rounded-xl">
+            <a href="update-user-profile.html">Update Profile</a>
+          </div>
+
+          <div class="hover:bg-gray-200 hover:text-blue-600 bg-green-700 text-white py-1 px-4 rounded-xl">
+            <a href="change-user-pass.html">Change Password</a>
+          </div>
+        </div>
+      </div>
+      <!-- side navbar End -->
+
+        <!-- info & img Start -->
+        <div class="bg-white rounded-xl w-2/3 h-80 py-6 shadow-xl">
+              
+              <div>
+                <p class="text-3xl font-semibold pb-4 text-center">Update Password</p>
+              </div>
+
+              <div class="px-24">
+                <hr>
+              </div>
+
+          <!-- input data Start -->
+          <div class="space-y-4 pt-8 px-28">
+        
+              <div class="flex items-center space-x-6">
+                <lable class="font-semibold text-xl" for="currentPassword"><span class="pr-1">Current</span><span>Password</span></lable>
+                <input id="currentPassword" class="w-full border-b-2 border-gray-300 outline-none py-1" type="password" placeholder="Enter your current password" disabled>
+              </div>
+          
+              <div class="flex items-center space-x-8">
+                <lable class="font-semibold text-xl text-gray-600" for="password"><span class="pr-1">Create</span><span>Password</span></lable>
+                <input id="password" class="w-full border-b-2 border-gray-300 outline-none py-1" type="password" placeholder="Enter a new password" disabled>
+              </div>
+      
+          </div>
+          <!-- input data End -->
+
+          <div class="flex justify-center pt-10 cursor-pointer">
+            <button>
+              <p onclick="savePass()" class="bg-green-700 hover:bg-blue-600 text-white text-xl font-semibold text-center py-2 px-4 rounded-xl">Save Change</p>
+            </button>
+          </div>
+
+        </div>
+      <!-- info & img End -->
+
+    </div>
+    <!-- Side nav & info End -->
+    <script src="js/display-ch-user-pass.js"></script>
+    <script src="js/change-Pass-data.js"></script>
+
+    </div>
+
+  <!-- Main div End -->
+
+</body>
+</html>
